@@ -19,8 +19,8 @@ jobs:
       uses: docker/login-action@v1.10.0
       with:
          registry: ghcr.io
-         username: ${ { github.actor } };
-         password: ${ { secrets.GITHUB_PAT } }    
+         username: ${ { secrets.username } };
+         password: ${ { secrets.scode } }    
     
     - name: Build the Docker image
       run: docker build -t simplehalloworld .
