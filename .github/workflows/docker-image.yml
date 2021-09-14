@@ -27,7 +27,7 @@ jobs:
       uses: docker/build-push-action@v2.7.0
       with:
         push: true
-        context: ${ {env.working-directory} }/SimpleWebHalloWorld
+        context: ${{env.working-directory}}/SimpleWebHalloWorld
         tags: |
           ghcr.io/albinalm/simplewebhalloworld:latest
           ghcr.io/albinalm/simplewebhalloworld:${{ github.run_number }}
